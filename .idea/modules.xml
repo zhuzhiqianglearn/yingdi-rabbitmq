@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/consummer/consummer.iml" filepath="$PROJECT_DIR$/consummer/consummer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provide/provide.iml" filepath="$PROJECT_DIR$/provide/provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rabbitcode.iml" filepath="$PROJECT_DIR$/.idea/rabbitcode.iml" />
+    </modules>
+  </component>
+</project>
