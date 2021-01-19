@@ -38,4 +38,20 @@ public class DiectConsummerConfig {
     }
 
 
+    @Bean
+    public Queue queueA() {
+        return new Queue("fanout.A");
+    }
+
+    @Bean
+    public Queue queueB() {
+        return new Queue("fanout.B");
+    }
+
+    @Bean
+    public Queue queueC() {
+        return new Queue("fanout.C");
+    }
+
+
 }
