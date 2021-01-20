@@ -22,7 +22,7 @@ public class FanoutController extends BaseController{
         map.put("messageData", messageData);
         map.put("createTime", createTime);
         rabbitTemplate.convertAndSend("fanoutExchange", null, map);
-        rabbitTemplate.convertAndSend("fanoutExchange", map);
+//        rabbitTemplate.convertAndSend("fanoutExchange", map);
         return "ok";
     }
 

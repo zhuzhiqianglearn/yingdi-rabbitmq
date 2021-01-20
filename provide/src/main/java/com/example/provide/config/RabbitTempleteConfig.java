@@ -23,8 +23,10 @@ public class RabbitTempleteConfig {
                 System.out.println("ConfirmCallback:     "+"确认情况："+ack);
                 System.out.println("ConfirmCallback:     "+"原因："+cause);
                 if(ack){
+                    //加上逻辑
                     System.out.println("发送成功-exchange");
                 }else{
+                    //加上逻辑
                     System.out.println("发送失败-exchange");
                 }
             }
@@ -39,7 +41,9 @@ public class RabbitTempleteConfig {
                 System.out.println("ReturnCallback:     "+"路由键："+returned.getRoutingKey());
                 if(returned.getReplyCode()==200){
                     System.out.println("发送成功-queue");
+                   //加上逻辑
                 }else{
+                    //加上逻辑
                     System.out.println("发送失败-queue");
                 }
             }
