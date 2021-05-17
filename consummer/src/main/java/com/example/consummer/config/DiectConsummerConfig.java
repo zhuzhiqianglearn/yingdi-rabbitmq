@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
-
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -21,20 +20,21 @@ public class DiectConsummerConfig {
         //   return new Queue("TestDirectQueue",true,true,false);
 
         //一般设置一下队列的持久化就好,其余两个就是默认false
-        return new Queue("TestDirectQueue",true);
+        return new Queue("TestDirectQueue", true);
     }
 
     @Bean
     public Queue ManQueue() {
 
 
-        return new Queue("topic.man",true);
+        return new Queue("topic.man", true);
     }
+
     @Bean
     public Queue WomenQueue() {
 
         //一般设置一下队列的持久化就好,其余两个就是默认false
-        return new Queue("topic.woman",true);
+        return new Queue("topic.woman", true);
     }
 
 

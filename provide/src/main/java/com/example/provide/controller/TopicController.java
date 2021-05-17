@@ -28,6 +28,7 @@ public class TopicController {
         rabbitTemplate.convertAndSend("topicExchange", "topic.man", manMap);
         return "ok";
     }
+
     @GetMapping("/sendTopicMessage2")
     public String sendTopicMessage2() {
         String messageId = String.valueOf(UUID.randomUUID());

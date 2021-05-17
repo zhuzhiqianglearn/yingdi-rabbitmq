@@ -1,0 +1,22 @@
+rabbitmq_delayed_message_exchange插件
+插件下载地址：
+
+http://www.rabbitmq.com/community-plugins.html
+
+打开网址后，ctrl + f，搜索rabbitmq_delayed_message_exchange。
+
+
+千万记住，一定选好版本号，由于我使用的是RabbitMQ 3.8.9.1,因此对应的rabbitmq_delayed_message_exchange插件也必须选择3.8.9的。
+
+如果没有选对版本，在使用延迟消息的时候，会遇到各种各样的奇葩问题，而且网上还找不到解决方案。我因为这个问题，折腾了整整一个晚上。请牢记，要选对插件版本。
+
+下载完插件后，将其放置到RabbitMQ安装目录下的plugins目录下，并使用如下命令启动这个插件：
+
+rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+
+如果启动成功会出现如下信息：
+
+The following plugins have been enabled:
+rabbitmq_delayed_message_exchange
+
+启动插件成功后，记得重启一下RabbitMQ，让其生效。

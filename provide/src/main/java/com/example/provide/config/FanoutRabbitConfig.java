@@ -39,6 +39,7 @@ public class FanoutRabbitConfig {
     Binding bindingExchangeB() {
         return BindingBuilder.bind(queueB()).to(fanoutExchange());
     }
+
     @Bean
     Binding bindingExchangeC() {
         return BindingBuilder.bind(queueC()).to(fanoutExchange());

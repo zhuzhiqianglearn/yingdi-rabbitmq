@@ -16,19 +16,20 @@ public class TopicRabbitConfig {
     }
 
     @Bean
-    public Queue secondQueue(){
-        return new Queue(TopicRabbitConfig.woman,true);
+    public Queue secondQueue() {
+        return new Queue(TopicRabbitConfig.woman, true);
     }
 
     @Bean
     TopicExchange exchange() {
-        return new TopicExchange("topicExchange",true,false);
+        return new TopicExchange("topicExchange", true, false);
     }
 
     @Bean
-    Binding bindingExchangeMessage(){
+    Binding bindingExchangeMessage() {
         return BindingBuilder.bind(firstQueue()).to(exchange()).with(TopicRabbitConfig.man);
     }
+
     @Bean
     Binding bindingExchangeMessage2() {
         return BindingBuilder.bind(secondQueue()).to(exchange()).with("topic.#");

@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @RestController
-public class SendCallBackController extends BaseController{
+public class SendCallBackController extends BaseController {
     @GetMapping("/TestMessageAck")
     public String TestMessageAck() {
         String messageId = String.valueOf(UUID.randomUUID());
